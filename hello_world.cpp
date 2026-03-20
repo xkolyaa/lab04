@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+<<<<<<< HEAD
 // Program for demonstrating personalized "Hello World".
 // Refactored: removed using namespace std for better code clarity.
 int main()
@@ -10,3 +11,5 @@ int main()
     // Display personalized greeting
     std::cout << "Hello world from " << name << std::endl;
         return 0;  // Program executed successfully}
+=======
+>>>>>>> cad3d96 (Apply clang-format with Mozilla style)
