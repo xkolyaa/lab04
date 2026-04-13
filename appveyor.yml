@@ -1,0 +1,10 @@
+image: Visual Studio 2019
+platform: x64
+configuration: Release
+
+build_script:
+  - cmake -H. -B_build -DCMAKE_INSTALL_PREFIX=_install
+  - cmake --build _build --config Release
+  - cmake --build _build --target install --config Release
+
+test: off
