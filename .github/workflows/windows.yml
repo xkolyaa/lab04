@@ -11,6 +11,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
+    - name: Install CMake
+      run: choco install cmake --installargs 'ADD_CMAKE_TO_PATH=System' -y
+
     - name: Configure
       run: cmake -H. -B_build -DCMAKE_INSTALL_PREFIX=_install
 
